@@ -1,9 +1,9 @@
 class Vehicle:
-    def __init__(self, type_: str, model: str, price: float, owner: str = None):
+    def __init__(self, type_: str, model: str, price: float):
         self.type = type_
         self. model = model
         self.price = price
-        self.owner = owner
+        self.owner = None
 
     def buy(self, money: int, owner: str):
         if self.owner:
